@@ -44,7 +44,7 @@ console.log('Problem 3: ' + vowelCounter('the quick brown fox'))
 function stringIDGenerator(userEntry){
     charPool = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRTSUVWXYZ1234567890'
     let d = new Date()
-    let milSec = d.getTime().toString().slice(-userEntry) //works up to userEntry of 13, but the first 4 numbers dont change very often. Perhaps using the last four only would be better.
+    let milSec = d.getTime().toString().slice(-userEntry) //works up to userEntry of 13, but only the last 4 numbers change often. Perhaps using the last four only would be better.
     let strID = ''
     let randIndex = 0
     
